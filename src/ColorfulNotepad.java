@@ -27,7 +27,7 @@ public class ColorfulNotepad extends JFrame implements ActionListener {
     
         JMenu fileMenu = new JMenu("File");
         fileMenu.setForeground(Color.RED); // Set menu font color to red
-    
+        
         JMenuItem newMenuItem = new JMenuItem("New");
         newMenuItem.addActionListener(this);
         newMenuItem.setForeground(Color.RED);
@@ -59,9 +59,9 @@ public class ColorfulNotepad extends JFrame implements ActionListener {
 
     private void createTextArea() {
         textArea = new JTextArea();
-        textArea.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-        textArea.setBackground(Color.PINK); // Set background color to black
-        textArea.setForeground(Color.BLACK); // Set text color to white
+        textArea.setFont(new Font("JetBrains Mono Regular", Font.PLAIN, 20));
+        textArea.setBackground(Color.BLACK); // Set background color to black
+        textArea.setForeground(Color.green); // Set text color to white
         JScrollPane scrollPane = new JScrollPane(textArea);
         add(scrollPane, BorderLayout.CENTER);
     }
